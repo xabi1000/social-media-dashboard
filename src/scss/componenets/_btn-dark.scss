@@ -1,0 +1,24 @@
+@use '../base' as *;
+
+.dark-mode {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	gap: 1rem;
+	&:hover .btn {
+		background: $Dark-Toggle;
+	}
+	& .btn {
+		width: 77px;
+		border-radius: 19px;
+		background-color: $Light-Toggle;
+		cursor: pointer;
+		&__circle {
+			border-radius: 19px;
+			background-color: black;
+			display: inline-block;
+			width: 25px;
+			height: 25px;
+		}
+	}
+}

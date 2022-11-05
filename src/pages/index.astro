@@ -1,8 +1,16 @@
 ---
+import Header from '../components/Header.astro';
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Cards from '../components/Cards.astro';
+import Overview from '../components/Overview.astro';
+
+import '../scss/main.scss';
 ---
 
 <Layout title='Welcome to Astro.'>
-	<main></main>
+	<main>
+		<Header />
+		<Cards />
+		<Overview />
+	</main>
 </Layout>

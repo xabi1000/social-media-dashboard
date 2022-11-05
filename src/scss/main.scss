@@ -1,0 +1,26 @@
+@use './base/' as *;
+
+body {
+	--text-color: hsl(228, 12%, 44%);
+	--bkg-color: hsl(0, 0%, 100%);
+
+	background: var(--bkg-color);
+	color: var(--text-color);
+	transition: background 1.3s ease-in-out;
+
+	@media (prefers-color-scheme: dark) {
+		/* defaults to dark theme */
+		--text-color: hsl(0, 0%, 100%);
+		--bkg-color: hsl(230, 17%, 14%);
+	}
+}
+
+.light-theme {
+	--text-color: hsl(228, 12%, 44%);
+	--bkg-color: hsl(0, 0%, 100%);
+}
+
+.dark-theme {
+	--text-color: hsl(0, 0%, 100%);
+	--bkg-color: hsl(230, 17%, 14%);
+}

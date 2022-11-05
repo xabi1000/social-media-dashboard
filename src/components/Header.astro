@@ -1,0 +1,15 @@
+---
+// @ts-nocheck
+import data from './public/data.json';
+import '../scss/componenets/_header.scss';
+const { header, BigCards } = data;
+import BtnDark from './Btn-dark.astro';
+---
+
+<header class='header'>
+	<div class='header__title'>
+		<h1>{header.title}</h1>
+		<h3>{header.subtitle}</h3>
+	</div>
+	<BtnDark />
+</header>
