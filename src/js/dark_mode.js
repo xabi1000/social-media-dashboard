@@ -11,6 +11,7 @@ const darkMode = () => {
   if (document.body.classList.contains('dark-theme')) {
     theme = 'dark';
     localStorage.setItem('theme', theme);
+    console.log('ok')
   }
 }
 
