@@ -1,0 +1,53 @@
+@use '../mixins/' as *;
+@use '../base/' as *;
+
+.down-cards-container {
+	display: flex;
+	flex-flow: row wrap;
+	gap: 2rem;
+	justify-content: center;
+	align-items: center;
+	margin-inline: auto;
+
+	@include devices(desktop) {
+	}
+
+	.card {
+		height: 7em;
+		padding: 1.5em;
+
+		&__header {
+			display: flex;
+
+			& .image__container {
+			}
+			& .card__title {
+				--text-color: hsla(253, 64%, 81%, 0.9);
+				color: var(--text-color);
+				// color: $Dark-BG-Card-hover;
+			}
+			& .card__icon {
+			}
+		}
+		&__header,
+		&__footer {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&__footer {
+			.data-type {
+				font-size: 1.7em;
+				font-family: InterBold;
+			}
+
+			& .icon-container {
+				font-size: 0.7em;
+			}
+		}
+
+		&.dark-theme {
+		}
+	}
+}

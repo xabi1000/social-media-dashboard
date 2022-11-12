@@ -1,7 +1,31 @@
 ---
-// @ts-nocheck
-import data from './public/data.json';
+import data from '../data/data.json';
+const { BigCards } = data;
 import '../scss/componenets/_cards.scss';
 ---
 
-<ul class='container light-theme'></ul>
+<ul class='top-card-container'>
+	{
+		BigCards.map(
+			({ user, number, time, text, color, arrow, icon, iconClass }) => (
+				<li class={`light-theme card ${iconClass}`}>
+					<div class='card-header'>
+						<div class='icon-container'>
+							<img src={icon} alt={`icon ${iconClass}`} class={iconClass} />
+							<b class='nickname'>{user}</b>
+						</div>
+					</div>
+
+					<div class='card-body'>
+						<p class='body__title'>{number}</p>
+						<p class='body__subtitle'>{text}</p>
+					</div>
+					<div class='card-footer'>
+						<img src={arrow} alt='arrow icon' />
+						<b class={`arrow arrow-${color}`}>{time}</b>
+					</div>
+				</li>
+			)
+		)
+	}
+</ul>

@@ -1,19 +1,21 @@
+// const btn = document.querySelector('.btn');
+// const currentTheme = localStorage.getItem('theme');
+// const allElementWithClassDarkMode = [...document.getElementsByClassName('light-theme')];
+// console.log(allElementWithClassDarkMode);
 
-const btn = document.querySelector('.btn');
-let theme = 'light';
-const currentTheme = localStorage.getItem('theme');
+// if (currentTheme == 'dark') document.body.classList.add('dark-theme');
 
-if (currentTheme == 'dark') document.body.classList.add('dark-theme');
+// const darkMode = () => {
+//   let theme = 'light';
+//   allElementWithClassDarkMode.forEach(DOMelement => {
+//     DOMelement.classList.toggle('dark-theme');
+//     if (DOMelement.classList.contains('dark-theme')) {
+//       theme = 'dark';
+//       localStorage.setItem('theme', theme);
+//     }
 
-const darkMode = () => {
-  console.log([...document.getElementsByClassName('light-theme')])
-  document.body.classList.toggle('dark-theme');
-  if (document.body.classList.contains('dark-theme')) {
-    theme = 'dark';
-    localStorage.setItem('theme', theme);
-    console.log('ok')
-  }
-}
+//   });
+// }
 
-btn.addEventListener('click', darkMode);
+// btn.addEventListener('click', darkMode);
 

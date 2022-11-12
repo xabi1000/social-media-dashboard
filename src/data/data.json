@@ -7,40 +7,44 @@
   },
   "BigCards": [
     {
-      "user": "  @nathanf",
-      "number": "  1987",
-      "time": "  12 Today",
+      "user": "@nathanf",
+      "number": "1987",
+      "time": "12 Today",
       "text": "FOLLOWERS",
       "color": "green",
       "arrow": "./images/icon-up.svg",
-      "icon": "./images/icon-facebook.svg"
+      "icon": "./images/icon-facebook.svg",
+      "iconClass": "facebook"
     },
     {
-      "user": "  @nathanf",
-      "number": "  1044",
-      "time": "  99 Today",
+      "user": "@nathanf",
+      "number": "1044",
+      "time": "99 Today",
       "text": "FOLLOWERS",
       "color": "green",
       "arrow": "./images/icon-up.svg",
-      "icon": "./images/icon-twitter.svg"
+      "icon": "./images/icon-twitter.svg",
+      "iconClass": "twitter"
     },
     {
-      "user": "  @realnathanf",
-      "number": "  11k",
-      "time": "  1099 Today",
+      "user": "@realnathanf",
+      "number": "11k",
+      "time": "1099 Today",
       "text": "FOLLOWERS",
       "color": "green",
       "arrow": "./images/icon-up.svg",
-      "icon": "./images/icon-instagram.svg"
+      "icon": "./images/icon-instagram.svg",
+      "iconClass": "instagram"
     },
     {
-      "user": "  Nathan F.",
-      "number": "  8239",
-      "time": "  144 Today",
+      "user": "Nathan F.",
+      "number": "8239",
+      "time": "144 Today",
       "text": "SUSCRIBERS",
       "color": "red",
       "arrow": "./images/icon-down.svg",
-      "icon": "./images/icon-youtube.svg"
+      "icon": "./images/icon-youtube.svg",
+      "iconClass": "youtube"
     }
   ],
   "smallCards": [
@@ -51,7 +55,8 @@
       "text": "FOLLOWERS",
       "color": "green",
       "arrow": "./images/icon-up.svg",
-      "icon": "FACEBOOK"
+      "icon": "./images/icon-facebook.svg",
+      "iconClass": "facebook"
     },
     {
       "user": "Likes",
@@ -60,7 +65,8 @@
       "text": "FOLLOWERS",
       "color": "red",
       "arrow": "./images/icon-down.svg",
-      "icon": "./images/icon-facebook.svg"
+      "icon": "./images/icon-facebook.svg",
+      "iconClass": "facebook"
     },
     {
       "user": "Likes",
@@ -69,7 +75,8 @@
       "text": "FOLLOWERS",
       "color": "green",
       "arrow": "./images/icon-up.svg",
-      "icon": "./images/icon-facebook.svg"
+      "icon": "./images/icon-instagram.svg",
+      "iconClass": "instagram"
     },
     {
       "user": "Profile Views",
@@ -78,7 +85,8 @@
       "text": "FOLLOWERS",
       "color": "green",
       "arrow": "./images/icon-up.svg",
-      "icon": "./images/icon-twitter.svg"
+      "icon": "./images/icon-instagram.svg",
+      "iconClass": "instagram"
     },
     {
       "user": "Retweets",
@@ -87,7 +95,8 @@
       "text": "FOLLOWERS",
       "color": "green",
       "arrow": "./images/icon-up.svg",
-      "icon": "./images/icon-twitter.svg"
+      "icon": "./images/icon-twitter.svg",
+      "iconClass": "twitter"
     },
     {
       "user": "Likes",
@@ -96,7 +105,8 @@
       "text": "FOLLOWERS",
       "color": "green",
       "arrow": "./images/icon-up.svg",
-      "icon": "./images/icon-twitter.svg"
+      "icon": "./images/icon-twitter.svg",
+      "iconClass": "twitter"
     },
     {
       "user": "Likes",
@@ -105,7 +115,8 @@
       "text": "FOLLOWERS",
       "color": "red",
       "arrow": "./images/icon-down.svg",
-      "icon": "./images/icon-twitter.svg"
+      "icon": "./images/icon-youtube.svg",
+      "iconClass": "youtube"
     },
     {
       "user": "Total Views",
@@ -114,7 +125,8 @@
       "text": "FOLLOWERS",
       "color": "red",
       "arrow": "./images/icon-down.svg",
-      "icon": "./images/icon-youtube.svg"
+      "icon": "./images/icon-youtube.svg",
+      "iconClass": "youtube"
     }
   ]
 }

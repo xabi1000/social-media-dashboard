@@ -1,3 +1,34 @@
 ---
+import data from '../data/data.json';
+const { smallCards } = data;
 import '../scss/componenets/_overview.scss';
 ---
+
+<ul class='down-cards-container'>
+	{
+		smallCards.map(
+			({ user, number, percentage, text, color, arrow, icon, iconClass }) => (
+				<li class='light-theme card'>
+					<div class='card__header'>
+						<b class='card__title'>{user}</b>
+						<div class='icon__container'>
+							<img
+								src={icon}
+								alt={`icon ${iconClass}`}
+								class={`card__icon ${iconClass}`}
+							/>
+						</div>
+					</div>
+
+					<div class='card__footer'>
+						<b class='data-type'>{number}</b>
+						<div class='icon-container'>
+							<img src={arrow} alt='arrow icon' class={`arrow`} />
+							<b class={`text-arrow text-arrow__${color}`}>{percentage}</b>
+						</div>
+					</div>
+				</li>
+			)
+		)
+	}
+</ul>

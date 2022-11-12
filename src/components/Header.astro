@@ -1,15 +1,17 @@
 ---
-// @ts-nocheck
-import data from './public/data.json';
+import data from '../data/data.json';
+const { header } = data;
 import '../scss/componenets/_header.scss';
-const { header, BigCards } = data;
-import BtnDark from './Btn-dark.astro';
+import FlipSwitch from './FlipSwitch.astro';
 ---
 
 <header class='header'>
-	<div class='header__title'>
-		<h1>{header.title}</h1>
-		<h3>{header.subtitle}</h3>
+	<div class='header__title-container'>
+		<h1 class='title'>{header.title}</h1>
+		<h3 class='subtitle'>{header.subtitle}</h3>
 	</div>
-	<BtnDark />
+	<div class='header__btn-container'>
+		<p class='btn-text'>Dark Mode</p>
+		<FlipSwitch />
+	</div>
 </header>
