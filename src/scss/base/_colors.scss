@@ -14,15 +14,35 @@ $Dark-Toggle: linear-gradient(
 //  *************************Dark Theme*************************
 
 $Dark-BG-Page: hsl(230, 17%, 14%);
-$Dark-BG-Card: hsl(232, 19%, 15%);
+$Dark-BG-Card: hsl(301deg 16% 19%);
 $Dark-BG-Card-hover: hsl(228, 28%, 20%);
 $Dark-text-color: hsl(0, 0%, 100%);
-$Dark-text-color-hover: hsl(228, 34%, 66%);
+$Dark-title-color: hsl(297deg 39% 69% / 90%);
+$Dark-text-color-hover: hsl(118deg 58% 47%);
 
 //  *************************Light Theme*************************
 
 $Light-BG-Page: hsl(0, 0%, 100%);
-$Light-BG-Card: hsl(225, 100%, 98%);
+$Light-BG-Card: hsl(255, 30%, 92%);
 $Light-BG-Card-hover: hsl(227, 47%, 96%);
-$Light-text-color: hsl(228, 12%, 44%);
-$Light-text-color-hover: hsl(230, 17%, 14%);
+$Light-text-color-hover: hsl(228, 12%, 44%);
+$Light-text-color: hsl(230, 17%, 14%);
+
+// CSS VARIABLES
+
+// Dark COLORS
+// --BG-Page: hsl(230, 17%, 14%);
+// --BG-Card: hsl(301deg 16% 19%);
+// --BG-Card-hover: hsl(228, 28%, 20%);
+// --title-color: hsl(297deg 39% 69% / 90%);
+// --text-color: hsl(0, 0%, 100%);
+// --text-color-hover: hsl(118deg 58% 47%);
+
+// // Light COLORS
+// --BG-Page: hsl(0, 0%, 100%);
+// --BG-Card: hsl(225, 100%, 98%);
+// --BG-Card-hover: hsl(227, 47%, 96%);
+// --title-color: hsl(297deg 39% 69% / 90%);
+// --text-color: hsl(228, 12%, 44%);
+// --text-color-hover: hsl(230, 17%, 14%);
+//

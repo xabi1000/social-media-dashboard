@@ -1,21 +1,19 @@
-// const btn = document.querySelector('.btn');
-// const currentTheme = localStorage.getItem('theme');
-// const allElementWithClassDarkMode = [...document.getElementsByClassName('light-theme')];
-// console.log(allElementWithClassDarkMode);
+const body = document.querySelector('body');
+const cards = [...document.querySelectorAll('.card')];
+const slider = document.querySelector('.slider');
+const nameModeText = document.querySelector('.btn-text');
 
-// if (currentTheme == 'dark') document.body.classList.add('dark-theme');
 
-// const darkMode = () => {
-//   let theme = 'light';
-//   allElementWithClassDarkMode.forEach(DOMelement => {
-//     DOMelement.classList.toggle('dark-theme');
-//     if (DOMelement.classList.contains('dark-theme')) {
-//       theme = 'dark';
-//       localStorage.setItem('theme', theme);
-//     }
+slider.addEventListener('click', () => {
+  console.log(nameModeText.textContent)
+  cards.forEach(card => card.classList.toggle('ligth-mode-card'));
+  body.classList.toggle('ligth-mode-body');
 
-//   });
-// }
+  if (body.matches('.ligth-mode-body')) {
+    nameModeText.textContent = 'Light Mode'
+  } else {
+    nameModeText.textContent = 'Dark Mode'
+  }
+});
 
-// btn.addEventListener('click', darkMode);
 

@@ -4,11 +4,11 @@ const { smallCards } = data;
 import '../scss/componenets/_overview.scss';
 ---
 
-<ul class='down-cards-container'>
+<ul class='down-cards-container' data-theme='dark'>
 	{
 		smallCards.map(
 			({ user, number, percentage, text, color, arrow, icon, iconClass }) => (
-				<li class='light-theme card'>
+				<li class='card'>
 					<div class='card__header'>
 						<b class='card__title'>{user}</b>
 						<div class='icon__container'>

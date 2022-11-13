@@ -15,10 +15,8 @@
 }
 
 .card {
-	--bkg-color: hsl(230, 17%, 20%);
-	--text-color: hsl(0, 0%, 100%);
-	background-color: var(--bkg-color);
-	color: var(--text-color);
+	background-color: $Dark-BG-Card;
+	color: $Dark-text-color;
 	position: relative;
 	flex: 0 0 min(85%, max(20%, 301px));
 	display: flex;
@@ -29,13 +27,27 @@
 	padding: 1.5rem 0;
 	overflow: hidden;
 	gap: 1rem;
+	cursor: pointer;
+
+	&:hover {
+		background-color: $Dark-BG-Card-hover;
+		color: $Dark-text-color-hover;
+	}
+}
+
+.ligth-mode-card {
+	background-color: $Light-BG-Card;
+	color: $Light-text-color;
+
+	&:hover {
+		background-color: $Light-BG-Card-hover;
+	}
 }
 
 .card-header {
 	& .nickname {
-		--text-color: hsla(253, 64%, 81%, 0.9);
-		color: var(--text-color);
 		font-family: Inter, 'Arial Narrow Bold', sans-serif;
+		color: $Dark-title-color;
 	}
 }
 
@@ -58,9 +70,7 @@
 		font-size: 1.9em;
 	}
 	.body__subtitle {
-		--text-color: hsla(0, 0%, 100%, 0.5);
 		margin: 0.5rem 0;
-		color: var(--text-color);
 		letter-spacing: 5px;
 		font-size: 0.7em;
 	}

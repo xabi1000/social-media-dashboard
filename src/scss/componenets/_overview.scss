@@ -22,9 +22,8 @@
 			& .image__container {
 			}
 			& .card__title {
-				--text-color: hsla(253, 64%, 81%, 0.9);
-				color: var(--text-color);
-				// color: $Dark-BG-Card-hover;
+				color: $Dark-title-color;
+				font-size: 0.7rem;
 			}
 			& .card__icon {
 			}

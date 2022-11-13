@@ -2,12 +2,10 @@
 @use './mixins/' as *;
 
 body {
-	--bkg-color: hsl(230, 17%, 14%);
-	--text-color: hsl(0, 0%, 100%);
-
-	background-color: var(--bkg-color);
-	color: var(--text-color);
+	background-color: $Dark-BG-Page;
+	color: $Dark-text-color;
 	font-size: 1rem;
+	padding: 1rem 0;
 }
 
 *,
@@ -66,9 +64,18 @@ body {
 	);
 }
 
+// COLOR PORCENTAGE NUMBER
+
 .text-arrow__green {
 	color: hsl(120, 100%, 25%);
 }
 .text-arrow__red {
 	color: hsl(0, 100%, 50%);
+}
+
+// COLOR LIGTH MODE
+
+.ligth-mode-body {
+	background-color: $Light-BG-Page;
+	color: $Light-text-color;
 }
